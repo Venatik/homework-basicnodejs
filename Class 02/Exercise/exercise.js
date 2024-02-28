@@ -3,18 +3,9 @@ import fs from "fs";
 export { addTextAsync, readTextAsync };
 
 const file = "note.txt";
-const text = "This is some random text.\n";
-const newText = "This is some additional text.";
+const newText = "This is some additional text.\n";
 
 // Ako koristime samo exercise.js
-
-// fs.writeFile(file, text, (err) => {
-//     if (err) {
-//         console.log("Error while creating file", err);
-//         return;
-//     }
-//     console.log("File created successfully.");
-// });
 
 // fs.appendFile(file, newText, (err) => {
 //     if (err) {
@@ -32,8 +23,6 @@ const newText = "This is some additional text.";
 //     console.log("File content:", data);
 // });
 
-// fs.writeFileSync(file, text);
-
 // fs.appendFileSync(file, newText);
 
 // let data = fs.readFileSync(file, "utf8");
@@ -42,9 +31,8 @@ const newText = "This is some additional text.";
 // Ako pravime export/import
 
 // const addText = () => {
-//     fs.writeFileSync(file, text);
-//     console.log("File created.");
 //     fs.appendFileSync(file, newText);
+//     console.log("Text appended successfully.");
 // };
 
 // const readText = () => {
@@ -53,20 +41,12 @@ const newText = "This is some additional text.";
 // };
 
 const addTextAsync = () => {
-    fs.writeFile(file, text, (err) => {
+    fs.appendFile(file, newText, (err) => {
         if (err) {
-            console.log("Error while creating file", err);
+            console.log("Error while appending to file", err);
             return;
         }
-        console.log("File created successfully.");
-
-        fs.appendFile(file, newText, (err) => {
-            if (err) {
-                console.log("Error while appending to file", err);
-                return;
-            }
-            console.log("Text appended successfully.");
-        });
+        console.log("Text appended successfully.");
     });
 };
 
