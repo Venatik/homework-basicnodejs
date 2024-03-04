@@ -40,7 +40,7 @@ function createPath(fileName) {
     return path.resolve(fileName);
 }
 
-// createPath("homework.txt");
+createPath("homework.txt");
 
 // writeFile();
 // appendFile();

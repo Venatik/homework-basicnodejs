@@ -1,16 +1,16 @@
 import emitter from "./emitter.js";
 import User from "./user.js";
 
-emitter.on("userRegister", (User) => {
-    console.log(`Welcome, ${User.name}! Thank you for registering.`);
+emitter.on("userRegister", (user) => {
+    console.log(`Welcome, ${user.name}! Thank you for registering.`);
 });
 
-emitter.on("userLogin", (User) => {
-    console.log(`Welcome back, ${User.name}! You've logged in.`);
+emitter.on("userLogin", (user) => {
+    console.log(`Welcome back, ${user.name}! You've logged in.`);
 });
 
-emitter.on("userLogout", (User) => {
-    console.log(`Goodbye, ${User.name}! You've logged out.`);
+emitter.on("userLogout", (user) => {
+    console.log(`Goodbye, ${user.name}! You've logged out.`);
 });
 
 const user1 = new User(1, "Obi-wan", "obicivilized@galaxymail.com");
