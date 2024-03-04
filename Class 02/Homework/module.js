@@ -40,6 +40,11 @@ function createPath(fileName) {
     return path.resolve(fileName);
 }
 
+const homeworkFileUrl = import.meta.url;
+const __dirname = path.dirname(fileURLToPath(homeworkFileUrl));
+const filePath = path.join(__dirname, "homework.txt");
+console.log(filePath);
+
 createPath("homework.txt");
 
 // writeFile();
