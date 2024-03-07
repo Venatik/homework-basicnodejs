@@ -14,11 +14,11 @@ const server = http.createServer((req, res) => {
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
     res.setHeader("Access-Control-Max-Age", 2592000);
 
-    if (req.url === "/" && method === "GET") {
+    if (url === "/" && method === "GET") {
         res.setHeader("Content-Type", "text/html");
         res.write("<h1>Welcome to the Student Directory</h1>")
         res.end();
-    } else if (req.url === "/student" && method === "GET") {
+    } else if (url === "/student" && method === "GET") {
         res.setHeader("Content-Type", "text/html");
         res.write("<h1>Student Information</h1>");
         res.write("<p>Name: Stefan</p>");
@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
         res.write("<p>Academy: Web Development</p>");
         res.write("<p>Subject: Basic Node.js</p>");
         res.end();
-    } else if (req.url === "/add_student" && method === "GET") {
+    } else if (url === "/add_student" && method === "GET") {
         res.setHeader("Content-Type", "text/html");
         res.write("<h1>Add Student</h1>");
         res.write('<form action="/all_students" method="POST">');
@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
         res.write('<button type="submit">Add Student</button>');
         res.write("</form>");
         res.end();
-    } else if (req.url === "/all_students" && method === "POST") {
+    } else if (url === "/all_students" && method === "POST") {
         let body = "";
         req.on("data", chunk => {
             body += chunk.toString();
@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
             })
             res.end();
         });
-    } else if (req.url === "/all_students" && method === "GET") {
+    } else if (url === "/all_students" && method === "GET") {
         res.setHeader("Content-Type", "text/html");
         res.write("<h1>All Students</h1>");
         students.forEach(student => {
