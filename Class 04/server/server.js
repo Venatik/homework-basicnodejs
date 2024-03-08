@@ -29,12 +29,12 @@ const server = http.createServer((req, res) => {
     } else if (url === "/add_student" && method === "GET") {
         res.setHeader("Content-Type", "text/html");
         res.write("<h1>Add Student</h1>");
-        res.write('<form action="/all_students" method="POST">');
+        res.write('<form action="/add_student" method="POST">');
         res.write('<input type="text" name="name" placeholder="Name" />');
         res.write('<button type="submit">Add Student</button>');
         res.write("</form>");
         res.end();
-    } else if (url === "/all_students" && method === "POST") {
+    } else if (url === "/add_student" && method === "POST") {
         let body = "";
         req.on("data", chunk => {
             body += chunk.toString();
