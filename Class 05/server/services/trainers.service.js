@@ -55,9 +55,9 @@ const addTrainer = (newTrainerData) => {
 const getTrainerById = (trainerId) => {
     const trainers = getTrainers();
     const foundTrainer = trainers.find((trainer) => trainer.id === trainerId);
-    if (!foundTrainer) {
-        throw new Error("Trainer not found.");
-    };
+    // if (!foundTrainer) {
+    //     throw new Error("Trainer not found.");
+    // };
 
     return foundTrainer;
 };

@@ -30,7 +30,7 @@ router.get("/trainers/:id", (req, res) => {
             res.status(404).send("Trainer not found.")
         }
     } catch (err) {
-        res.sendStatus(500);
+        res.status(500).send(err.message);
     }
 });
 
@@ -40,7 +40,7 @@ router.post("/trainers", (req, res) => {
         const newTrainer = addTrainer(newTrainerData);
         res.status(201).send(newTrainer);
     } catch (err) {
-        res.sendStatus(500);
+        res.status(500).send(err.message);
     }
 });
 
@@ -51,7 +51,7 @@ router.put("/trainers/:id", (req, res) => {
         const updatedTrainer = updateTrainer(id, trainerUpdateData);
         res.send(updatedTrainer);
     } catch (err) {
-        res.sendStatus(500);
+        res.status(500).send(err.message);
     }
 });
 
@@ -61,7 +61,7 @@ router.delete("/trainers/:id", (req, res) => {
         deleteTrainer(id);
         res.sendStatus(204);
     } catch (err) {
-        res.sendStatus(500);
+        res.status(500).send(err.message);
     }
 });
 
@@ -70,7 +70,7 @@ router.delete("/trainers", (req, res) => {
         deleteAllTrainers();
         res.sendStatus(204);
     } catch (err) {
-        res.sendStatus(500);
+        res.status(500).send(err.message);
     }
 });
 
