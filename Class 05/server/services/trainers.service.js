@@ -1,4 +1,5 @@
 import fs from "fs";
+import { get } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
 import { v4 as uuidv4 } from "uuid";
@@ -17,6 +18,17 @@ const getTrainers = (queryData) => {
         const isCurrentlyTeaching = queryData.isCurrentlyTeaching === "true";
         updatedTrainers = updatedTrainers.filter((trainer) => trainer.isCurrentlyTeaching === isCurrentlyTeaching);
     }
+
+    if (queryData?.sortBy === "coursesAscending") {
+        updatedTrainers.sort((a, b) => a.coursesFinished - b.coursesFinished);
+    } else if (queryData?.sortBy === "coursesDescending") {
+        updatedTrainers.sort((a, b) => b.coursesFinished - a.coursesFinished);
+
+        if (updatedTrainers.length <= 0) {
+            throw new Error("No trainers found.");
+        }
+        return updatedTrainers;
+    };
 
     if (updatedTrainers.length <= 0) {
         throw new Error("No trainers found.");
@@ -86,10 +98,16 @@ const deleteTrainer = (trainerId) => {
     saveData(updatedTrainers);
 };
 
+const deleteAllTrainers = () => {
+    const updatedTrainers = [];
+    saveData(updatedTrainers);
+};
+
 export {
     getTrainers,
     addTrainer,
     getTrainerById,
     updateTrainer,
-    deleteTrainer
+    deleteTrainer,
+    deleteAllTrainers
 };

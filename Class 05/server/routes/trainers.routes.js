@@ -4,7 +4,8 @@ import {
     addTrainer,
     getTrainerById,
     updateTrainer,
-    deleteTrainer
+    deleteTrainer,
+    deleteAllTrainers
 } from "../services/trainers.service.js";
 
 const router = express.Router();
@@ -28,6 +29,46 @@ router.get("/trainers/:id", (req, res) => {
         } else {
             res.status(404).send("Trainer not found.")
         }
+    } catch (err) {
+        res.sendStatus(500);
+    }
+});
+
+router.post("/trainers", (req, res) => {
+    const newTrainerData = req.body;
+    try {
+        const newTrainer = addTrainer(newTrainerData);
+        res.status(201).send(newTrainer);
+    } catch (err) {
+        res.sendStatus(500);
+    }
+});
+
+router.put("/trainers/:id", (req, res) => {
+    const id = req.params.id;
+    const trainerUpdateData = req.body;
+    try {
+        const updatedTrainer = updateTrainer(id, trainerUpdateData);
+        res.send(updatedTrainer);
+    } catch (err) {
+        res.sendStatus(500);
+    }
+});
+
+router.delete("/trainers/:id", (req, res) => {
+    const id = req.params.id;
+    try {
+        deleteTrainer(id);
+        res.sendStatus(204);
+    } catch (err) {
+        res.sendStatus(500);
+    }
+});
+
+router.delete("/trainers", (req, res) => {
+    try {
+        deleteAllTrainers();
+        res.sendStatus(204);
     } catch (err) {
         res.sendStatus(500);
     }

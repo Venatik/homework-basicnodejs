@@ -25,5 +25,23 @@
     "isCurrentlyTeaching": true,
     "timeEmployed": "6 years 2 months",
     "coursesFinished": 12
+  },
+  {
+    "id": "e9da403f-70d2-42e2-a03d-c6e55c741d8e",
+    "firstName": "Ahsoka",
+    "lastName": "Tano",
+    "email": "snips@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "3 months",
+    "coursesFinished": 5
+  },
+  {
+    "id": "6caa74b1-e538-4741-8ece-13bf689d5df2",
+    "firstName": "Sheev",
+    "lastName": "Palpatine",
+    "email": "alwaystwo@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "14 years",
+    "coursesFinished": 120
   }
 ]
