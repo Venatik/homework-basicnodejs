@@ -1,0 +1,38 @@
+[
+  {
+    "id": "deeb4838-755b-49e7-8fde-06902fd3d3a4",
+    "model": "LS-01",
+    "yearOfManufacture": 2022,
+    "lastOwner": "Count Dooku",
+    "color": "green"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "model": "LS-02",
+    "yearOfManufacture": 2021,
+    "lastOwner": "Ahsoka Tano",
+    "color": "blue"
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "model": "LS-03",
+    "yearOfManufacture": 2020,
+    "lastOwner": "Obi-Wan Kenobi",
+    "color": "blue"
+  },
+  {
+    "id": "0f9b78c7-6e5d-4a1f-9a2b-3c4de5f6a7b8",
+    "model": "LS-04",
+    "yearOfManufacture": 2022,
+    "lastOwner": "Yoda",
+    "color": "green"
+  },
+  {
+    "id": "5c264f2c-5ce4-437e-8215-a2845b0c3580",
+    "model": "LS-05",
+    "yearOfManufacture": 2021,
+    "lastOwner": "Mace Windu",
+    "color": "purple",
+    "checkedOut": true
+  }
+]
