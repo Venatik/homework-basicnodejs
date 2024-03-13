@@ -25,7 +25,8 @@
     "model": "LS-04",
     "yearOfManufacture": 2022,
     "lastOwner": "Yoda",
-    "color": "green"
+    "color": "green",
+    "checkedOut": true
   },
   {
     "id": "5c264f2c-5ce4-437e-8215-a2845b0c3580",
@@ -33,6 +34,14 @@
     "yearOfManufacture": 2021,
     "lastOwner": "Mace Windu",
     "color": "purple",
+    "checkedOut": true
+  },
+  {
+    "id": "52cf761c-aaf9-49b7-90be-9378337df322",
+    "model": "LS-06",
+    "yearOfManufacture": 2021,
+    "lastOwner": "Ezra",
+    "color": "blue",
     "checkedOut": true
   }
 ]

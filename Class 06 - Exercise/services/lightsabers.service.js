@@ -65,7 +65,7 @@ const checkoutLightsaber = (id) => {
     };
 
     if (lightsaber.checkedOut) {
-        throw new Error("Lightsaber already checked out.");
+        throw new Error("This lightsaber is already checked out.");
     };
 
     lightsaber.checkedOut = true;
