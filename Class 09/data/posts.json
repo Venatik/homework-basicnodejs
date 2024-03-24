@@ -1,1 +1,38 @@
-[{"uuid":"3f88d05b-15d2-4a38-b52c-62ee75dd848c","title":"Top 10 Tips for Mastering Fortnite","body":"Fortnite is a popular battle royale game with millions of players worldwide. Here are some expert tips to help you dominate the competition!","tags":["Fortnite","Gaming Tips","Battle Royale"],"postedAt":"2024-03-21T08:00:00Z"},{"uuid":"2c4f2d67-2f3e-448a-80a2-9d9a1e6ac2a5","title":"Exploring the Lore of The Witcher Universe","body":"The Witcher series is renowned for its rich lore and captivating storylines. Dive into the fascinating world of monsters, magic, and political intrigue!","tags":["The Witcher","Fantasy","RPG"],"postedAt":"2024-03-20T15:30:00Z"},{"uuid":"e67a9427-dff7-4c51-b39d-f5be8258a187","title":"Review: Cyberpunk 2077 - A Flawed Masterpiece","body":"Cyberpunk 2077 took the gaming world by storm with its immersive open world and gripping narrative. Despite its technical issues, it remains a must-play for fans of the genre.","tags":["Cyberpunk 2077","RPG","Open World"],"postedAt":"2024-03-19T12:45:00Z"},{"uuid":"4a9e93a0-366a-47b0-b6ff-56df48c57e9d","title":"The Evolution of First-Person Shooters: From Doom to Call of Duty","body":"First-person shooters have come a long way since the days of Doom. Explore the evolution of the genre and the innovations that have shaped modern classics like Call of Duty.","tags":["FPS","Gaming History","Call of Duty"],"postedAt":"2024-03-18T10:20:00Z"},{"id":"ed3e7729-cf33-4db0-b4e8-1c870f6a0dc2","email":"stefanadmin@gmail.com","password":"$2a$08$IzE6.d/6j8nDmznNoLIzvuuaiZxg4J.R3YIpxKH4vL0RKIiQd0NlO","role":"admin","refreshToken":[]}]
+[
+  {
+    "id": "3f88d05b-15d2-4a38-b52c-62ee75dd848c",
+    "title": "Top 10 Tips for Mastering Fortnite",
+    "body": "Fortnite is a popular battle royale game with millions of players worldwide. Here are some expert tips to help you dominate the competition!",
+    "tags": ["Fortnite", "Gaming Tips", "Battle Royale"],
+    "postedAt": "2024-03-21T08:00:00Z"
+  },
+  {
+    "id": "2c4f2d67-2f3e-448a-80a2-9d9a1e6ac2a5",
+    "title": "Exploring the Lore of The Witcher Universe",
+    "body": "The Witcher series is renowned for its rich lore and captivating storylines. Dive into the fascinating world of monsters, magic, and political intrigue!",
+    "tags": ["The Witcher", "Fantasy", "RPG"],
+    "postedAt": "2024-03-20T15:30:00Z"
+  },
+  {
+    "id": "e67a9427-dff7-4c51-b39d-f5be8258a187",
+    "title": "Review: Cyberpunk 2077 - A Flawed Masterpiece",
+    "body": "Cyberpunk 2077 took the gaming world by storm with its immersive open world and gripping narrative. Despite its technical issues, it remains a must-play for fans of the genre.",
+    "tags": ["Cyberpunk 2077", "RPG", "Open World"],
+    "postedAt": "2024-03-19T12:45:00Z"
+  },
+  {
+    "id": "4a9e93a0-366a-47b0-b6ff-56df48c57e9d",
+    "title": "The Evolution of First-Person Shooters: From Doom to Call of Duty",
+    "body": "First-person shooters have come a long way since the days of Doom. Explore the evolution of the genre and the innovations that have shaped modern classics like Call of Duty.",
+    "tags": ["FPS", "Gaming History", "Call of Duty"],
+    "postedAt": "2024-03-18T10:20:00Z"
+  },
+  {
+    "id": "29eff7f9-6cf4-4d6c-9026-d2c1c99983c4",
+    "title": "New blog post",
+    "tags": ["WoW", "2004", "Venatik", "Mage", "Death Knight"],
+    "postedAt": "2024-03-24T16:58:27.982Z",
+    "body": "Games are awesome",
+    "updatedAt": "2024-03-24T17:06:02.052Z"
+  }
+]

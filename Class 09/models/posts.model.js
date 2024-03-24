@@ -22,24 +22,24 @@ export default class PostModel {
         return foundPost;
     }
 
-    static async create(body) {
+    static async create(postData) {
         const posts = await this.getAll();
-        const { title, body: postBody, tags } = body;
-        const post = new Post(title, postBody, tags);
+        const { title, body, tags } = postData;
+        const post = new Post(title, body, tags);
         posts.push(post);
         await DataService.writeData(postsPath, posts);
         return post;
     }
 
-    static async update(id, body) {
+    static async update(id, postData) {
         const posts = await this.getAll();
         const postIndex = posts.findIndex(post => post.id === id);
-        if (productIndex < 0) {
+        if (postIndex < 0) {
             throw new Error("Post not found");
         }
         const updatedPost = {
             ...posts[postIndex],
-            body,
+            ...postData,
             id,
             updatedAt: new Date().toISOString(),
         }

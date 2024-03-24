@@ -7,7 +7,7 @@ import bcrypt from "bcryptjs";
 const currentFileURL = import.meta.url;
 const currentFilePath = fileURLToPath(currentFileURL);
 const filePathDirectory = path.dirname(currentFilePath);
-const usersPath = path.join(filePathDirectory, "..", "data", "posts.json");
+const usersPath = path.join(filePathDirectory, "..", "data", "users.json");
 
 export default class AuthModel {
     static async getAll() {
