@@ -1,1 +1,16 @@
-[{"id":"43a6a97b-7abb-4820-8722-066948503691","email":"stefanadmin@gmail.com","password":"$2a$08$AZYNu6MPCUC6Nf/w/VUzT.igLMug.SE7.uEJdz8e5CwWcy7Y9B412","role":"admin","refreshToken":[]},{"id":"247c93d2-1b56-401a-8988-ea1e6cc62f13","email":"stefanuser@gmail.com","password":"$2a$08$Wn.iILcQ9f.1q1MdA/yXPOKIQhutbVY61mafxY3FUUEumyrNMt9Cq","role":"standard","refreshToken":[]}]
+[
+  {
+    "id": "43a6a97b-7abb-4820-8722-066948503691",
+    "email": "stefanadmin@gmail.com",
+    "password": "$2a$08$AZYNu6MPCUC6Nf/w/VUzT.igLMug.SE7.uEJdz8e5CwWcy7Y9B412",
+    "role": "admin",
+    "refreshToken": []
+  },
+  {
+    "id": "247c93d2-1b56-401a-8988-ea1e6cc62f13",
+    "email": "stefanuser@gmail.com",
+    "password": "$2a$08$Wn.iILcQ9f.1q1MdA/yXPOKIQhutbVY61mafxY3FUUEumyrNMt9Cq",
+    "role": "standard",
+    "refreshToken": []
+  }
+]
