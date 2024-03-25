@@ -20,7 +20,7 @@ export default class AuthController {
             res.setHeader("Authorization", accessToken);
 
             const refreshToken = createRefreshToken(user.id);
-            await AuthModel.saveRefreshToken(refreshToken, user.id);
+            await AuthModel.saveRefreshToken(user.id, refreshToken);
 
             res.cookie("refresh-token", refreshToken), {
                 httpOnly: true,
@@ -53,7 +53,7 @@ export default class AuthController {
             }
 
             const { userId } = verifyRefreshToken(refreshToken);
-            const foundUser = await AuthModel.findUserById(userId);
+            const foundUser = await AuthModel.getById(userId);
             if (!foundUser) {
                 return res.sendStatus(403);
             }
